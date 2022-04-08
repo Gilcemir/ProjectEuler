@@ -30,6 +30,9 @@ while(menu.ToLower() != "x"){
         break;
         case "5":
         p005.Get();
+        break;               
+        case "6":
+        p006.Get();
         break;
         
         default:

@@ -28,7 +28,10 @@ while(menu.ToLower() != "x"){
         case "4":
         p004.Get();
         break;
-
+        case "5":
+        p005.Get();
+        break;
+        
         default:
         Console.WriteLine("Not implemented yet.");
         break;

@@ -42,7 +42,10 @@ while(menu.ToLower() != "x"){
         break;
         case "9":
         p009.Get();
-        break;           
+        break;          
+        case "10":
+        p010.Get();
+        break;          
         default:
         Console.WriteLine("Not implemented yet.");
         break;

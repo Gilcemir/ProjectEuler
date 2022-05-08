@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Project
 {
-    public class p007
+    public class pe007
     {
         public static void Get()
         {

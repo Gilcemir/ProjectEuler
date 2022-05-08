@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Project
 {
-    public class p002
+    public class pe002
     {
         public static void Get()
         {

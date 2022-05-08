@@ -1,7 +1,7 @@
 using System;
 namespace Project
 {
-    public class p010
+    public class pe010
     {
         public static void Get()
         {

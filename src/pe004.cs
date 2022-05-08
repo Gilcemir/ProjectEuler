@@ -1,7 +1,7 @@
 using System;
 namespace Project
 {
-    public class p004
+    public class pe004
     {
         static int lowerLimit = 100;
         static int upperLimit = 999;

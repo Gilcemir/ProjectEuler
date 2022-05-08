@@ -29,7 +29,7 @@ using System.Collections.Generic;
 
 namespace Project
 {
-    public class p005
+    public class pe005
     {
         public static void Get()
         {

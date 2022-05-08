@@ -1,7 +1,7 @@
 using System;
 namespace Project
 {
-    public class p009
+    public class pe009
     {
         //Approach: Brute force, with b always starting from a+1, since  a < b < c.
 

@@ -1,7 +1,7 @@
 using System;
 namespace Project
 {
-    public class p003
+    public class pe003
     {
         static long num = 600851475143;
         public static void Get()

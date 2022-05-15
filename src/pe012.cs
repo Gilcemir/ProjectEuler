@@ -1,3 +1,4 @@
+
 /*
 some mathematical scratches:
 triangle number :
@@ -8,15 +9,13 @@ f(3) = 1 + 2 + 3 = f(1) + 2 + 3 = f(2) + 3;
 .
 .
 .
-f(n) = f(n-1) + 3;
-------------
+f(n) = f(n-1) + 3;------------
 
 Using memoization...
 
 
 */
 
-using System.Numerics;
 
 namespace Project
 {
@@ -34,6 +33,7 @@ namespace Project
                 long nextTringle = triangleNumbers[i - 1] + i;
                 triangleNumbers.Add(nextTringle);
                 var divs = Divisors(nextTringle);
+
                 if (divs > 500){
                     Console.WriteLine($"n = {i}, f(n) = {nextTringle}, number of divisors = {divs}");
                     Console.WriteLine($"The answer is {nextTringle}");

@@ -31,21 +31,11 @@ namespace Project
             for(int row = 1; row < numLines; row++)
             {
                 int numColumns = triangle[row].Count;
-                for(int col = 0; col < numColumns; col++)
-                {
-                    //Console.WriteLine($"row = {row}, col = {col}, tringle.Count = {triangle.Count}, number of columns = {numColumns}");
-                    if(col == 0)
-                    {
-                        triangle[row][col] += triangle[row - 1][col];
-                    }else if(col == numColumns - 1)
-                    {
-                        triangle[row][col] += triangle[row - 1][col - 1];
-                    }else
-                    {
-                        //Console.Write("i'm here");
-                        triangle[row][col] += Math.Max(triangle[row - 1][col], triangle[row - 1][col - 1]);
-                    }
-                }
+                //first and last has only one parent
+                triangle[row][0] += triangle[row - 1][0];
+                triangle[row][numColumns - 1] += triangle[row - 1][numColumns - 1 - 1];
+                for(int col = 1; col < numColumns - 1; col++)
+                    triangle[row][col] += Math.Max(triangle[row - 1][col], triangle[row - 1][col - 1]);
             }
         } 
 

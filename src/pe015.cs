@@ -41,7 +41,8 @@
         f(20) = (2*20)!/(20! * 20!)
         Lets code...
 
-
+        CHECK FULL ANALYSIS HERE:
+        https://github.com/Gilcemir/DynamicProgramming/tree/master/GridTraveler
 */
 
 using System.Numerics;

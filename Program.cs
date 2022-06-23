@@ -81,6 +81,9 @@ while (menu.ToLower() != "x")
         case "21":
             pe021.Get();
             break;
+        case "22":
+            pe022.Get();
+            break;
         default:
             Console.WriteLine("Not implemented yet.");
             break;

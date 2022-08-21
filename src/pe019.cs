@@ -1,6 +1,6 @@
 namespace Project
 {
-    public class pe019
+    public static class pe019
     {
         public static void Get()
         {

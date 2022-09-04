@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Project
 {
-    public class pe002
+    public class pe002 : IGet
     {
-        public static void Get()
+        public void Get()
         {
             Console.WriteLine("2 - Even Fibonnacci numbers");
 

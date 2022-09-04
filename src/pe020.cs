@@ -2,9 +2,9 @@ using System.Numerics;
 
 namespace Project
 {
-    public class pe020
+    public class pe020 : IGet
     {
-        public static void Get()
+        public void Get()
         {
         var ans = Factorial(100).ToString().Select(x => int.Parse(x.ToString())).Sum();
         Console.WriteLine(ans);

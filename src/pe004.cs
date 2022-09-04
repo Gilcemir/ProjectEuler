@@ -1,11 +1,11 @@
 using System;
 namespace Project
 {
-    public class pe004
+    public class pe004 : IGet
     {
         static int lowerLimit = 100;
         static int upperLimit = 999;
-        public static void Get()
+        public void Get()
         {
             Console.WriteLine("4 - Largest Palindrome product");
             int largestPalindrome = 0;

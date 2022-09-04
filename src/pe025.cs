@@ -2,13 +2,13 @@
 
 namespace Project;
 //for this algorithm check https://github.com/Gilcemir/DynamicProgramming/tree/master/Fibonacci
-public static class pe025
+public class pe025 : IGet
 {
     private static BigInteger[][] baseFibonacci = new BigInteger[][]{
         new BigInteger[]{1, 1},
         new BigInteger[]{1, 0}
     };
-    public static void Get()
+    public void Get()
     {
         var fib = LogN(0);
         int i = 1;

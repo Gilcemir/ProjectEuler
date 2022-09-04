@@ -1,9 +1,9 @@
 ﻿namespace Project;
 
 //backtracking technique
-public static class pe024
+public class pe024 : IGet
 {
-    public static void Get()
+    public void Get()
     {
         var permutations = Permute(new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9});
 

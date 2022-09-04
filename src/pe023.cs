@@ -1,9 +1,9 @@
 ﻿namespace Project;
 
-public static class pe023
+public class pe023 : IGet
 {
     private static int _limit = 28123;
-    public static void Get()
+    public void Get()
     {
         var set = SumOfAbundants();
         // return abundant numbers which is not mapped in the previous method

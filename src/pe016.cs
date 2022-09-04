@@ -4,9 +4,9 @@ using System.Numerics;
 
 namespace Project
 {
-    public class pe016
+    public class pe016 : IGet
     {
-        public static void Get()
+        public void Get()
         {
             Console.WriteLine(Sum(2));
         }

@@ -1,9 +1,9 @@
 using System;
 namespace Project
 {
-    public class pe010
+    public class pe010 : IGet
     {
-        public static void Get()
+        public void Get()
         {
             Console.WriteLine("10 - Summation of primes");
             long _limit = 2000000;

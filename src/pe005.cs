@@ -29,9 +29,9 @@ using System.Collections.Generic;
 
 namespace Project
 {
-    public class pe005
+    public class pe005 : IGet
     {
-        public static void Get()
+        public void Get()
         {
             Console.WriteLine("5 - Smallest multiple");
 

@@ -3,9 +3,9 @@ using System.Linq;
 
 namespace Project
 {
-    public class pe007
+    public class pe007 : IGet
     {
-        public static void Get()
+        public void Get()
         {
             Console.WriteLine("10001st prime");
 

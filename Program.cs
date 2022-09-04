@@ -1,102 +1,48 @@
-﻿using System;
-using Project;
-
-static string Menu()
+﻿namespace Project
 {
-    Console.WriteLine();
-    Console.WriteLine(@"Enter the ID of the problem (1, 2, 3 etc): (X to exit!)");
-
-    Console.WriteLine();
-
-    return Console.ReadLine().ToLower();
-}
-
-
-string menu = Menu();
-
-while (menu.ToLower() != "x")
-{
-    switch (menu)
+    class Program
     {
-        case "1":
-            pe001.Get();
-            break;
-        case "2":
-            pe002.Get();
-            break;
-        case "3":
-            pe003.Get();
-            break;
-        case "4":
-            pe004.Get();
-            break;
-        case "5":
-            pe005.Get();
-            break;
-        case "6":
-            pe006.Get();
-            break;
-        case "7":
-            pe007.Get();
-            break;
-        case "8":
-            pe008.Get();
-            break;
-        case "9":
-            pe009.Get();
-            break;
-        case "10":
-            pe010.Get();
-            break;
-        case "11":
-            pe011.Get();
-            break;
-        case "12":
-            pe012.Get();
-            break;
-        case "13":
-            pe013.Get();
-            break;
-        case "14":
-            pe014.Get();
-            break;
-        case "15":
-            pe015.Get();
-            break;
-        case "16":
-            pe016.Get();
-            break;
-        case "17":
-            pe017.Get();
-            break;
-        case "18":
-            pe018.Get();
-            break;
-        case "19":
-            pe019.Get();
-            break;
-        case "20":
-            pe020.Get();
-            break;
-        case "21":
-            pe021.Get();
-            break;
-        case "22":
-            pe022.Get();
-            break;
-        case "23":
-            pe023.Get();
-            break;
-        case "24":
-            pe024.Get();
-            break;
-        case "25":
-            pe025.Get();
-            break;
-        default:
-            Console.WriteLine("Not implemented yet.");
-            break;
-    }
+        public static void Main(string[] args)
+        {
+            var menu = Menu();
 
-    menu = Menu();
+            while (menu.ToLower() != "x")
+            {
+                var className = "Project.pe";
+                try
+                {
+                    className += FormatString(menu);
+                    var instanceOfClass = GetClass(className);
+                    instanceOfClass.Get();
+                }
+                catch
+                {
+                    Console.WriteLine("Not implemented yet.");
+                }
+
+                menu = Menu();
+            }
+        }
+
+        private static string FormatString(string menu)
+        {
+            return int.Parse(menu).ToString("D3");
+        }
+        
+        private static IGet GetClass(string className)
+        {
+            var type = Type.GetType(className);
+            return Activator.CreateInstance(type) as IGet; 
+        }
+        
+        private static string Menu()
+        {
+            Console.WriteLine();
+            Console.WriteLine(@"Enter the ID of the problem (1, 2, 3 etc): (X to exit!)");
+
+            Console.WriteLine();
+
+            return Console.ReadLine().ToLower();
+        }
+    }
 }

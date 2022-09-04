@@ -19,10 +19,10 @@ Using memoization...
 
 namespace Project
 {
-    public class pe012
+    public class pe012 : IGet
     {
         static List<long> triangleNumbers;
-        public static void Get()
+        public void Get()
         {
             triangleNumbers = new List<long>();
             triangleNumbers.Add(0);//f(0)

@@ -10,10 +10,10 @@ Could avoid them by iterating through 1 <= col < numColumns - 1...
 */
 namespace Project
 {
-    public class pe018
+    public class pe018 : IGet
     {
         public static List<List<int>> triangle;
-        public static void Get()
+        public void Get()
         {
             triangle = GetTriangle();
             //Print(triangle);

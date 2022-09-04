@@ -1,8 +1,8 @@
 namespace Project
 {
-    public static class pe019
+    public class pe019 : IGet
     {
-        public static void Get()
+        public void Get()
         {
 
             DateTime date1 = new DateTime(1901, 1, 1);

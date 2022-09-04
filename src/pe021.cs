@@ -1,9 +1,9 @@
 namespace Project
 {
-    public class pe021
+    public class pe021 : IGet
     {
         static int n = 10001;
-        public static void Get()
+        public void Get()
         {
         int[] d = Enumerable.Range(0, n).Select((x, index) => Divisors(index).Sum()).ToArray();
         Dictionary<int, int> map = new Dictionary<int, int>();

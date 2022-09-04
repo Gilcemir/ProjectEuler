@@ -3,9 +3,9 @@ using System.Linq;
 
 namespace Project
 {
-    public class pe006
+    public class pe006 : IGet
     {
-        public static void Get()
+        public void Get()
         {
             Console.WriteLine("6 - Sum square difference");
 

@@ -1,10 +1,10 @@
 using System;
 namespace Project
 {
-    public class pe003
+    public class pe003 : IGet
     {
         static long num = 600851475143;
-        public static void Get()
+        public void Get()
         {
             Console.WriteLine("3 - Largest Prime Factor");
 

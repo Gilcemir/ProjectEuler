@@ -1,11 +1,11 @@
 using System;
 namespace Project
 {
-    public class pe009
+    public class pe009 : IGet
     {
         //Approach: Brute force, with b always starting from a+1, since  a < b < c.
 
-        public static void Get()
+        public void Get()
         {
             Console.WriteLine("9 - Special Pythagorean triplet");
             long ans = 0;

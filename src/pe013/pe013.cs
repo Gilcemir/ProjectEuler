@@ -1,9 +1,9 @@
 namespace Project
 {
 
-    public class pe013
+    public class pe013 : IGet
     {
-        public static void Get()
+        public void Get()
         {
             List<string> nums = GetNums();
             List<List<int>> numsList = new List<List<int>>();

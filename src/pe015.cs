@@ -49,9 +49,9 @@ using System.Numerics;
 
 namespace Project
 {
-    public class pe015
+    public class pe015 : IGet
     {
-        public static void Get()
+        public void Get()
         {
             BigInteger nFac = Fatorial(20);
             BigInteger ans = Fatorial(2*20)/(nFac*nFac);

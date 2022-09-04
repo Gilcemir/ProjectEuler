@@ -1,8 +1,8 @@
 namespace Project
 {
-    public class pe017
+    public class pe017 : IGet
     {
-        public static void Get()
+        public void Get()
         {
             List<string> nums = GetNums();
             //foreach(string num in nums)

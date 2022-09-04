@@ -6,10 +6,10 @@
 
 namespace Project
 {
-    public class pe014
+    public class pe014 : IGet
     {
         static Dictionary<long, long> map;
-        public static void Get()
+        public void Get()
         {
             map = new Dictionary<long, long>();
             map.Add(1, 1);

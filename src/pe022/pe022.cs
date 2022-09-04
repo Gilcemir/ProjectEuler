@@ -1,8 +1,8 @@
 namespace Project
 {
-    public class pe022
+    public class pe022 : IGet
     {
-        public static void Get()
+        public void Get()
         {
                 List<string> names = GetNames();
                 long result = names

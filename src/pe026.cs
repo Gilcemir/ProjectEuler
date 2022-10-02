@@ -29,7 +29,11 @@ public class pe026 : IGet
     {
         return limit%divisor == 0;
     }
-
+    /// <summary>
+    /// Map the remainders of the division, while it exists or repeats.
+    /// </summary>
+    /// <param name="n">Number to Solve</param>
+    /// <returns>The recurrency cycle length</returns>
     private static int Solve(int n)
     {
         var denominator = SetDenominator(n);
@@ -44,18 +48,16 @@ public class pe026 : IGet
             mapOfRemainders.Add(remainder);
             denominator = SetDenominator(n, remainder);
             remainder = denominator % n;
-            
         }
-
-        
         return mapOfRemainders.Count;
     }
 
     /// <summary>
     /// Sets the next denominator. If denominator is less than the number, increases its value
-    /// to make sure that remainder will always be an integer.
+    /// to make sure that the remainder will always be an integer.
     /// </summary>
-    /// <param name="n"></param>
+    /// <param name="n">The divisor</param>
+    /// <param name="n">Current remainder</param>
     /// <returns>return the next 10^x greater than n</returns>
     private static int SetDenominator(int n, int denominator = 10) 
     {

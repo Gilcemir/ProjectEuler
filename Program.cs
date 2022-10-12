@@ -15,9 +15,10 @@
                     var instanceOfClass = GetClass(className);
                     instanceOfClass.Get();
                 }
-                catch
+                catch (Exception e)
                 {
                     Console.WriteLine("Not implemented yet.");
+                    Console.WriteLine("Exception message if exists: " + e.Message);
                 }
 
                 menu = Menu();

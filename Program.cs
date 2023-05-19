@@ -42,7 +42,6 @@
             Console.WriteLine(@"Enter the ID of the problem (1, 2, 3 etc): (X to exit!)");
 
             Console.WriteLine();
-
             return Console.ReadLine().ToLower();
         }
     }

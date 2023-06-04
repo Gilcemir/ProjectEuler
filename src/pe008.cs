@@ -1,8 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using ProjectEuler.Contracts;
 
-namespace Project
+namespace ProjectEuler
 {
     public class pe008 : IGet
     {

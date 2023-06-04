@@ -1,4 +1,6 @@
-namespace Project;
+using ProjectEuler.Contracts;
+
+namespace ProjectEuler;
 public class pe027 : IGet
 {
         private const int _aLimit = 999;

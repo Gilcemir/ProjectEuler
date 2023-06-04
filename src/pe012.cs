@@ -17,7 +17,9 @@ Using memoization...
 */
 
 
-namespace Project
+using ProjectEuler.Contracts;
+
+namespace ProjectEuler
 {
     public class pe012 : IGet
     {

@@ -1,6 +1,6 @@
-using System.Numerics;
+using ProjectEuler.Contracts;
 
-namespace Project;
+namespace ProjectEuler;
 
 /*
 The ideia behind this exercise is very simple.

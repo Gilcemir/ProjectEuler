@@ -1,6 +1,7 @@
 ﻿using System.Numerics;
+using ProjectEuler.Contracts;
 
-namespace Project;
+namespace ProjectEuler;
 //for this algorithm check https://github.com/Gilcemir/DynamicProgramming/tree/master/Fibonacci
 public class pe025 : IGet
 {

@@ -1,4 +1,6 @@
-﻿namespace Project
+﻿using ProjectEuler.Contracts;
+
+namespace ProjectEuler
 {
     class Program
     {
@@ -8,7 +10,7 @@
 
             while (menu.ToLower() != "x")
             {
-                var className = "Project.pe";
+                var className = "ProjectEuler.pe";
                 try
                 {
                     className += FormatString(menu);

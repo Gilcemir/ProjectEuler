@@ -1,8 +1,9 @@
 using System.Numerics;
+using ProjectEuler.Contracts;
 
 //no need explanation for this one. Very easy using brute force.
 
-namespace Project
+namespace ProjectEuler
 {
     public class pe016 : IGet
     {

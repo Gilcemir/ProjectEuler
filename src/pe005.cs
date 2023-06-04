@@ -1,7 +1,6 @@
-using System;
-using System.Collections.Generic;
+using ProjectEuler.Contracts;
 
-    /*
+/*
         Approach:
             Build a dictionary with every prime number that is needed to generate a certain range of numbers.
             key will store the Prime number, value will store the number of times we need that prime to generate 
@@ -27,7 +26,7 @@ using System.Collections.Generic;
     Easier to solve that without coding at all :D
     */
 
-namespace Project
+namespace ProjectEuler
 {
     public class pe005 : IGet
     {

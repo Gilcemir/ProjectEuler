@@ -1,4 +1,4 @@
-﻿namespace Project;
+﻿namespace ProjectEuler.Contracts;
 
 public interface IGet
 {

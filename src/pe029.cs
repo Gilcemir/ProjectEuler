@@ -1,6 +1,7 @@
 using System.Numerics;
+using ProjectEuler.Contracts;
 
-namespace Project;
+namespace ProjectEuler;
 
 public class pe029 : IGet
 {

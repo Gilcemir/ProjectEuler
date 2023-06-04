@@ -46,8 +46,9 @@
 */
 
 using System.Numerics;
+using ProjectEuler.Contracts;
 
-namespace Project
+namespace ProjectEuler
 {
     public class pe015 : IGet
     {

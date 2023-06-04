@@ -8,7 +8,10 @@ Notice that both first and last spot from each line has only one parent, thats w
 Could avoid them by iterating through 1 <= col < numColumns - 1...
 
 */
-namespace Project
+
+using ProjectEuler.Contracts;
+
+namespace ProjectEuler.pe018
 {
     public class pe018 : IGet
     {

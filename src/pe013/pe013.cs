@@ -1,4 +1,6 @@
-namespace Project
+using ProjectEuler.Contracts;
+
+namespace ProjectEuler.pe013
 {
 
     public class pe013 : IGet

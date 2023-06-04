@@ -1,4 +1,6 @@
-﻿namespace Project;
+﻿using ProjectEuler.Contracts;
+
+namespace ProjectEuler;
 
 //backtracking technique
 public class pe024 : IGet

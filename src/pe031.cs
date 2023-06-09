@@ -1,5 +1,3 @@
-using System.Collections.Specialized;
-using System.Numerics;
 using System.Text;
 using ProjectEuler.Contracts;
 using static System.Console;

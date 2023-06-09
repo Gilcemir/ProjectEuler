@@ -1,6 +1,7 @@
+using System.Reflection;
 using ProjectEuler.Contracts;
 
-namespace ProjectEuler.pe022
+namespace ProjectEuler
 {
     public class pe022 : IGet
     {
@@ -16,8 +17,8 @@ namespace ProjectEuler.pe022
 
         static List<string> GetNames()
         {
-            
-            string path = Directory.GetCurrentDirectory() + "\\src\\pe022\\p022_names.txt";
+            string basePath = AppDomain.CurrentDomain.BaseDirectory.TrimEnd(Path.DirectorySeparatorChar);
+            string path = Path.Combine(basePath, "..", "..", "..", "src", "pe022", "p022_names.txt");
             string line = "";
 
             using (StreamReader sr = File.OpenText(path))

@@ -11,7 +11,7 @@ Could avoid them by iterating through 1 <= col < numColumns - 1...
 
 using ProjectEuler.Contracts;
 
-namespace ProjectEuler.pe018
+namespace ProjectEuler
 {
     public class pe018 : IGet
     {
@@ -57,7 +57,8 @@ namespace ProjectEuler.pe018
         public static List<List<int>> GetTriangle()
         {
             List<List<int>> triangle = new List<List<int>>();
-            string path = Directory.GetCurrentDirectory() + "\\src\\pe018\\pe018.txt";
+            string basePath = AppDomain.CurrentDomain.BaseDirectory.TrimEnd(Path.DirectorySeparatorChar);
+            string path = Path.Combine(basePath, "..", "..", "..", "src", "pe018", "pe018.txt");
 
             List<string> lines = new List<string>();
 

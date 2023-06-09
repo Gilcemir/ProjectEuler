@@ -1,6 +1,6 @@
 using ProjectEuler.Contracts;
 
-namespace ProjectEuler.pe017
+namespace ProjectEuler
 {
     public class pe017 : IGet
     {
@@ -15,7 +15,8 @@ namespace ProjectEuler.pe017
 
         static List<string> GetNums()
         {
-            string path = Directory.GetCurrentDirectory() + "\\src\\pe017\\pe017.txt";
+            string basePath = AppDomain.CurrentDomain.BaseDirectory.TrimEnd(Path.DirectorySeparatorChar);
+            string path = Path.Combine(basePath, "..", "..", "..", "src", "pe017", "pe017.txt");
 
             List<string> nums = new List<string>();
 

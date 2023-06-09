@@ -1,4 +1,5 @@
-﻿using ProjectEuler.Contracts;
+﻿using System.Diagnostics;
+using ProjectEuler.Contracts;
 
 namespace ProjectEuler
 {
@@ -15,7 +16,13 @@ namespace ProjectEuler
                 {
                     className += FormatString(menu);
                     var instanceOfClass = GetClass(className);
+                    Stopwatch stopwatch = new Stopwatch();
+                    stopwatch.Start();
+                    Console.WriteLine("Starting exectution...\n");
                     instanceOfClass.Get();
+                    Console.WriteLine("\nEnded...");
+                    Console.WriteLine($"Elapsed time is {stopwatch.ElapsedMilliseconds} ms");
+                    stopwatch.Stop();
                 }
                 catch (Exception e)
                 {
